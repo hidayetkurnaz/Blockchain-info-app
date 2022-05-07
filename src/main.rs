@@ -72,16 +72,16 @@ fn blockchain_info_app(address: &str) {
          balance += &subtotal_vout - &subtotal_vin;
 
          println!("-------------------------------------------------------");
-            println!("TX ID:           {}", &blockchain_transaction.txid);
-            println!("SATOSHIS IN:     {}", &subtotal_vout);
-            println!("SATOSHIS OUT:    {}", &subtotal_vin);
-            println!("BALANCE:         {}", &balance);
+            println!("TX ID :           {}", &blockchain_transaction.txid);
+            println!("SATOSHIS IN :     {}", &subtotal_vout);
+            println!("SATOSHIS OUT :    {}", &subtotal_vin);
+            println!("BALANCE :         {}", &balance);
             println!("-------------------------------------------------------");
 
       };
 
-      println!("CURRENT BALANCE:     {}", &balance);
-      println!("         IN BTC:     {}\n\n", balance as f32 * 0.00000001);
+      println!("CURRENT BALANCE :     {}", &balance);
+      println!("         IN BTC :     {}\n\n", balance as f32 * 0.00000001);
    }
 }
 
