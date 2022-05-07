@@ -71,12 +71,12 @@ fn blockchain_info_app(address: &str) {
 
          balance += &subtotal_vout - &subtotal_vin;
 
-         println!("-----------------------------------------------------");
+         println!("-------------------------------------------------------");
             println!("TX ID:           {}", &blockchain_transaction.txid);
             println!("SATOSHIS IN:     {}", &subtotal_vout);
             println!("SATOSHIS OUT:    {}", &subtotal_vin);
             println!("BALANCE:         {}", &balance);
-            println!("-----------------------------------------------------");
+            println!("-------------------------------------------------------");
 
       };
 
